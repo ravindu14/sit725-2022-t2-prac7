@@ -1,0 +1,38 @@
+.brand-logo {
+    height: 100%;
+}
+
+.user-image-size {
+    height: 100%;
+}
+
+.nav-inner-wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.main-body {
+    background-color: #4db6ac;
+    color: white;
+    height: calc(100vh - 64px);
+
+}
+
+.materialboxed-image {
+    margin: 0 auto;
+    height: 400px;
+}
+
+.click-me-button {
+    background-color: #EE6E73;
+    margin-top: 50px;
+}
+
+.livedemo-image-container .livedemo-image {
+    height: 30vh;
+}
+
+.main-body {
+    overflow: auto;
+}
