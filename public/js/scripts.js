@@ -56,6 +56,12 @@ const submitForm = () => {
   addCardsToDB(formData);
 };
 
+const socket = io();
+
+socket.on("chat", (msg) => {
+  console.log("Random Number : " + msg);
+});
+
 $(document).ready(function () {
   $(".materialboxed").materialbox();
   $("#formSubmit").click(() => {
