@@ -18,16 +18,6 @@ app.use(express.urlencoded({ extends: false }));
 
 app.use("/api", AppRoutes);
 
-io.on("connection", (socket) => {
-  console.log("user connected");
-  socket.on("disconnect", function () {
-    console.log("user disconnected");
-  });
-  setInterval(() => {
-    socket.emit("chat", parseInt(Math.random() * 10));
-  }, 1000);
-});
-
 server.listen(process.env.port || 3000, () => {
   console.log(`App connected to http://localhost:${process.env.port}`);
   connectDB();
